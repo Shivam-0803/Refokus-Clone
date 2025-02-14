@@ -13,7 +13,7 @@ const App = () => {
       <Work/>
       <Stripes/>
       <Products/>
-      <Product/>
+      {/* <Product/> */}
 
     </div>
   )

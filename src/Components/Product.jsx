@@ -1,9 +1,22 @@
-import React from 'react'
+    import React from "react";
+    import Button from "./Button";
 
-const Product = () => {
-  return (
-    <div className='max-w-72 h-40 bg-zin-300'>Product</div>
-  )
-}
+    const Product = ({val}) => {
+    return (
+        <div className="w-full py-35 mt-20text-white bg-zinc-900 ">
+        <div className="max-w-screen-xl mx-auto px-10 flex items-center justify-between">
+            <h1 className="text-6xl capitalize font-semibold">{val.title}</h1>
+            <div className="dets w-1/3">
+        <p className="mb-10"> {val.description}</p> 
+        {/* <Button/>        */}
+        <div className="flex items-center gap-5">
+        {val.live && <Button/>}
+        {val.case && <Button title = 'Case Study'/>}
+        </div>
+        </div>
+        </div>
+        </div>
+    );
+    };
 
-export default Product
+    export default Product;

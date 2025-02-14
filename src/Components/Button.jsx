@@ -1,10 +1,10 @@
 import React from 'react'
 import { IoIosReturnRight } from "react-icons/io";
 
-const Button = () => {
+const Button = ({title ="Get Started"}) => {
   return (
-    <div className='min-w-40 px-4 py-2 rounded-full text-black bg-zinc-100 flex items-center justify-between'>
-        <span className='text-sm font-medium'>Get Started</span>
+    <div className='max-w-40 px-4 py-2 rounded-full text-black bg-zinc-100 flex items-center justify-between'>
+        <span className='text-sm font-medium'>{title}</span>
         <IoIosReturnRight />
     </div>
   )
